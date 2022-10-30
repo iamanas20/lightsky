@@ -4,4 +4,20 @@
 .container {
   padding: $pagePadding;
   overflow-x: hidden;
+
+  .topCardSection {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 34px;
+
+    .overviewCard {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .dataCard {
+      grid-column-start: 5;
+      grid-column-end: 13;
+    }
+  }
 }

@@ -8,9 +8,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>Anas Latique</title>
-        <meta name="description" content="Anas Latique creative portfolio" />
-        <link rel="icon" href="/favicon.png" />
+        <title>Lightsky</title>
+        <meta name="description" content="Lightsky is a weather app" />
       </Head>
       <Component {...pageProps} />
       <Analytics />

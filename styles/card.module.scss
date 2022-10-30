@@ -1,5 +1,7 @@
 @import './variables.scss';
 
 .card {
-  
+  padding: 22px;
+  border-radius: 10px;
+  background: $cardBackground;
 }
