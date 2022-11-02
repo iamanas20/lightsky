@@ -9,10 +9,55 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 34px;
-
+    
     .overviewCard {
       grid-column-start: 1;
       grid-column-end: 5;
+      background-color:hsla(204,33%,15%,1);
+      background-image:
+      radial-gradient(at 26% 69%, hsla(195,39%,20%,0.55) 0px, transparent 50%),
+      radial-gradient(at 89% 48%, rgba(80, 130, 130, 0.2) 0px, transparent 50%),
+      radial-gradient(at 33% 39%, rgba(74, 25, 26, 0.42) 0px, transparent 50%),
+      radial-gradient(at 88% 88%, hsla(187,5%,10%,0.28) 0px, transparent 50%);
+
+      .temperature {
+        font-size: 68px;
+        margin-bottom: 12px;
+        span {
+          font-size: 46px;
+          position: relative;
+          top: -8px;
+        }
+      }
+
+      .description {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
+      }
+      
+      .separator {
+        margin: 20px 0;
+        height: 1px;
+        background: $secondaryBackground;
+      }
+      
+      .location, .time {
+        letter-spacing: 1px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .location {
+        margin-bottom: 8px;
+      }
     }
 
     .dataCard {
